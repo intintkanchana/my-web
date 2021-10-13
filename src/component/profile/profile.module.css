@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    outline: none;
+    color: black;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    /* height : calc(100vh) */
+    padding-top: 200px;
+    height: fit-content;
+}
+.profileleft img{
+    width: auto;
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7%;
+
+    -webkit-box-shadow: 27px 28px 40px -1px #ffe8f8;
+    -moz-box-shadow: 27px 28px 40px -1px #ffe8f8;
+    box-shadow: 27px 28px 40px -1px  #ffe8f8;
+    transition: 2s;
+   
+}
+
+.profileleft img:hover{
+    transform: scale(1.5);
+}
+
+.profileleft{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.profileright{
+    display:flex;
+    flex-direction: column;   
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;   
+    font-size: 20px;
+}
+
+/* .boxmainWarp {
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right,rgb(42, 122, 255), rgb(247, 97, 139));
+  padding: 3px;
+  width: fit-content;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;800&display=swap');
+
+.boxmain {
+  background-color: #CFB59C;
+  padding: 5px;
+  width: fit-content;
+}
+
+.box{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    color: #000;
+}
+.profileright{
+    margin-left: 150px;
+    justify-content: center;
+    color: black;
+    
+}
+
+@media only screen and (max-width:1200px){
+    .profileright{
+        margin-left: 0px;
+    }
+
+    .box{
+        margin-left: 40px;
+    }
+
+    .profileleft img:hover{
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width:950px){
+     .profileright{
+         margin-left: 40px;
+         margin-top: 50px;
+     }
+
+     .profileleft img{
+        margin: 0 20px;
+        height: auto;
+        width: calc(100vw - 40px);
+    }
+ 
+     .box{
+         margin-left: 40px;
+     }
+
+     .profile{
+        grid-template-columns: 1fr;
+    }
+
+    .profileright{
+        margin-left: 0;
+    }
+
+    .profile{
+        padding-top: 100px;
+    }
+
+}
+
+
+
+

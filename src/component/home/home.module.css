@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.home{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height : calc(100vh - 60px);
+}
+
+.homeleft{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeleft .header{
+    font-size: 40px; 
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Heebo', sans-serif; */
+    font-weight: 500;
+    color: black;
+    
+}
+
+.homeleft .content{
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 550px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.homeright{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeright img{
+    height: 250px;
+     animation: yourAnimation 4s ease 0s infinite normal none;
+     
+     /* margin-top: 250px; */
+    
+}
+
+.arrow{
+    width: 100vw;
+    height: 120px;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: arrowAnimation 2s ease 0s infinite normal none;
+}
+
+@keyframes yourAnimation {
+    0.0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes arrowAnimation {
+    0.0%{
+        transform: translate(0,-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .home{
+       grid-template-columns: 1fr 1fr;
+       
+    }
+
+    .homeleft .header{
+        font-size: 30px; 
+    }
+    
+    .homeleft .content{
+        font-size: 18px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .home{
+        grid-template-columns: 1fr;
+    }
+
+    .homeleft{
+        height: 80vh;
+    }
+
+    .homeright{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .home{
+       padding-top: 53px;
+    }
+
+    .homeleft .header{
+        font-size: 40px; 
+        width: calc(100vw - 40px);
+        margin: 0 20px;
+        font-size: 30px;
+    }
+
+    .homeleft .content{
+        width: calc(100vw - 40px);
+        margin: 0 20px;
+        margin-top: 20px;
+    }
+
+}
+/* .line{
+    width: 100vw;
+    height: 2px;
+    background-color: burlywood;
+} */
