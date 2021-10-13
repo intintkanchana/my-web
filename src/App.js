@@ -13,8 +13,10 @@ function App() {
       <div id="profile"><Profile/></div>
       <div id="skills"><Skills/></div>
       <div id="education"><Education/></div>
-      <div id="footer"></div>
+      <div id="footer">
+        aergneb
       <Footer/> 
+      </div>
     </div>
   );
 }
